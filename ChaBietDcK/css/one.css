@@ -1,0 +1,218 @@
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 1000px;
+}
+.KhungHinh {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.NuaTren {
+    background-image: url(../img/nenchuc1.png);
+    position: relative;
+}
+.Tay {
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #95def347;
+}
+.Tay_btn {
+    background: none;
+    padding-block: 0px;
+    border-width: 0px;
+    padding-inline: 0px;
+    animation: Lac 0.5s infinite;
+}
+#qua {
+    width: 100%;
+}
+#Moqua {
+    position: absolute;
+    top: 0px;
+    display: none;
+    animation: ToRa linear 0.1s;
+}
+
+
+
+#NuaDuoi {
+    bottom: 1000px;
+    background-image: url(../img/nenchuc2.png);
+    position: relative;
+    animation: fadeIn linear 2s;
+    display: none;
+}
+.Nen {
+    margin-top: 50px;
+    width: 1850px;
+    position: relative;
+}
+.Nar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    margin-top: -25px;
+    margin-left: -699px;
+}
+
+/*---Chi---*/
+.Main {
+    position: absolute;
+    margin-top: -255px;
+    margin-left: 405px;
+    transform: rotate(9deg);
+}
+.Main_troll {
+    position: absolute;
+    margin-left: -1256px;
+    margin-top: -500px;
+    transform: rotate(25deg);
+}
+.haha {
+    position: absolute;
+    margin-left: 1105px;
+    margin-top: 575px;
+    transform: rotate(345deg);
+}
+
+/*---Dai---*/
+.Dai {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -340px;
+    margin-left: -45PX;
+    z-index: 1;
+}
+.Dai_btn {
+    background: none;
+    padding-block: 0px;
+    border-width: 0px;
+    padding-inline: 0px;
+}
+.Dai_btn_img {
+    width: 125%;
+}
+#Dai_hat {
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+/*---Tung---*/
+.Tung {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -190px;
+    margin-left: 745px;
+    z-index: 1;
+}
+
+.Tung_btn {
+    background: none;
+    padding-block: 0px;
+    border-width: 0px;
+    padding-inline: 0px;
+}
+
+.Tung_btn_img {
+    width: 125%;
+}
+
+#Tung_hat {
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+/*---Dat---*/
+.Dat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 364px;
+    margin-left: -500px;
+    z-index: 1;
+}
+
+.Dat_btn {
+    background: none;
+    padding-block: 0px;
+    border-width: 0px;
+    padding-inline: 0px;
+}
+
+#Datide {
+    width: 125%;
+}
+.Dat_btn_img {
+    width: 125%;
+}
+
+#Dat_hat {
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+/*---Hieu ung nen ---*/
+.HU_nen {
+    position: absolute;
+}
+#HU_tunghoa {
+    display: none;
+    position: absolute;
+}
+/* Animation */
+@keyframes fadeIn {
+    From {
+        opacity: 0;
+    }to{
+         opacity: 1;
+     }
+}
+@keyframes ToRa {
+    From {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(100%));
+    }
+}
+@keyframes Lac {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+/* chuot cham vao doi anh*/
+/*.manhinh:hover {
+    background: url(../img/giap.png);
+}
+*/

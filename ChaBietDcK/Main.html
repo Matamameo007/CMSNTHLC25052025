@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/one.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="NuaTren">
+        <div class="KhungHinh">
+            <div class="Tay">
+                <button class="Tay_btn" onclick="showDiv()">
+                    <img id="qua" src="img/qua.png">
+                </button>
+                <div id="Moqua">
+                    <img src="img/moqua2.png" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NuaDuoi">
+        <div class="KhungHinh">
+            <img class="Nen" src="img/nen.png" />
+            <div class="Nar">
+                <img src="img/chuc.png" style="width: 535%;">
+            </div>
+            <div class="Main">
+                <img src="main/main.jpg" style="width: 225px;border: dashed #dd0d54b0;padding: 1px;">
+            </div>
+            <div class=Main_troll>
+                <img src="main/maintroll.jpg" style="width: 55px; border: 5px dotted #0a7effcc;">
+            </div>
+            <div class=haha>
+                <img src="main/haha.jpg" style="border: double #b41af3bd;width: 115px;">
+            </div>
+            <div class="Dai">
+                <button class="Dai_btn" onclick="DaiHat()">
+                    <img class="Dai_btn_img" src="img/daiide.gif" />
+                </button>
+                <div id="Dai_hat">
+                    <img class="Dai_btn_img" src="img/daihat.gif" />
+                </div>
+            </div>
+            <div class="Tung">
+                <button class="Tung_btn" onclick="TungHat()">
+                    <img class="Tung_btn_img" src="img/tungide.gif" />
+                </button>
+                <div id="Tung_hat">
+                    <img class="Tung_btn_img" src="img/Tunghat.gif" />
+                </div>
+            </div>
+            <div class="Dat">
+                <button class="Dat_btn" onclick="DatHat()">
+                    <img id="Datide" src="img/Datide.gif" />
+                </button>
+                <div id="Dat_hat">
+                    <img class="Dat_btn_img" src="img/Dathat.gif" />
+                </div>
+            </div>
+            <div class="HU_nen">
+                <img src="img/phahoa.gif" style="width: 300px;margin-top: 389px;margin-left: -67px;">
+                <img src="img/phahoa.gif" style="width: 300px;margin-bottom: 362px;">
+                <img src="img/phahoa.gif" style="width: 300px;margin-left: 501px;">
+                <img src="img/phahoa.gif" style="width: 300px;margin-bottom: 544px;">
+                <img src="img/phahoa.gif" style="width: 300px;margin-bottom: 375px;">
+            </div>
+            <div id="HU_tunghoa">
+                <img src="anhnen/tunghoa.gif" style="width: 2000px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showDiv() {
+            document.getElementById("qua").style.display = "none";
+            document.getElementById("Moqua").style.display = "block";
+            document.getElementById("NuaDuoi").style.display = "block";
+            const img = document.getElementById('HU_tunghoa');
+            img.style.display = 'block';
+
+            setTimeout(() => {
+                img.style.display = 'none';
+            }, 2500);
+        }
+        function DaiHat() {
+            document.getElementById("Dai_hat").style.display = "block";
+            const img = document.getElementById('Dai_hat');
+            img.style.display = 'block';
+
+            setTimeout(() => {
+                img.style.display = 'none';
+            }, 2500);
+        }
+        function TungHat() {
+            document.getElementById("Tung_hat").style.display = "block";
+            const img = document.getElementById('Tung_hat');
+            img.style.display = 'block';
+
+            setTimeout(() => {
+                img.style.display = 'none';
+            }, 2500);
+        }
+        function DatHat() {
+            document.getElementById("Datide").style.display = "none";
+            document.getElementById("Dat_hat").style.display = "block";
+            const img = document.getElementById('Dat_hat');
+            img.style.display = 'block';
+
+            setTimeout(() => {
+                img.style.display = 'none';
+                document.getElementById("Datide").style.display = "block";
+            }, 2500);
+        }
+    </script>
+</body>
+</html>

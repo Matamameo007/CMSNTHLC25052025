@@ -1,0 +1,3 @@
+    width: -webkit-fill-available;  code tu di chuyen theo man hinh
+ posittion: relative;  code cho the dung len truoc
+posittion: absolute; code cho the cha con
